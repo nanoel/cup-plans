@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
 @font-face {
-    font-family: 'Miso Regular';
-    src: url('miso-regular-webfont.woff2') format('woff2'),
-         url('miso-regular-webfont.woff') format('woff');
+    font-family: "Miso Regular";
+    src: url('../fonts/miso-regular-webfont.woff2') format('woff2'),
+         url('../fonts/miso-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Miso Bold';
-    src: url('miso-bold-webfont.woff2') format('woff2'),
-         url('miso-bold-webfont.woff') format('woff');
+    font-family: "Miso Bold";
+    src: url('../fonts/miso-bold-webfont.woff2') format('woff2'),
+         url('../fonts/miso-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -71,18 +73,42 @@ textarea {
 .ba-grid-cups {
 	margin-top: 50px;
 	background-color: #fadc7e;
-	padding: 20px;
+	padding: 30px;
 	display: flex;
-	font-weight: wrap;
-	margin-left: -30px;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: center;
 }
 
+.ba-grid-cups img{
+	width: 135px;
+}
 .ba-columns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background: #FFF;
 	flex-basis: 360px;
-	flex-grow: 3;
-	padding: 0 30px 0;
-	justify-content: space-between;
-	align-items: center;
+}
 
+.ba-columns + .ba-columns {
+	margin-left: 30px;
+}
+
+.ba-price {
+	font: 700 70px/1 "Miso Bold", sans-serif;
+	color:  #02995b;
+	margin: 20px 0;
+}
+
+.ba-cups__title {
+	font: 400 56px/1 "Miso Regular", sans-serif;
+	color:  #333333;
+}
+
+.ba-cups__subtitle {
+	font: 300 20px/1.2 Lato, sans-serif;
+	color:  #333333;
+	text-align: center;
+	margin-bottom: 20px;
 }
